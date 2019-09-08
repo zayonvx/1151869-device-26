@@ -8,21 +8,41 @@
   <body>
   <header class="main-header">
     <a href="index.html" class="logo"><img src="logo.png" height="35" width="163" alt="Логотип девайс"></a>
-    <input type="text" placeholder="Поиск по сайту">
-    <ul class="header-menu-sec">
-      <li><button type="button">Войти</button></li>
-      <li><button type="button">Сравнить</button></li>
-      <li><button type="button">Корзина</button></li>
+    
+    <ul class="user-search">
+      <li>
+        <input type="text" placeholder="Поиск по сайту">
+      </li>
     </ul>
 
-    <button type="button">Каталог товаров</button>
+    <ul class="header-auth_none-block">
+      <li>
+        <button type="button">Войти</button>
+      </li>
+      <li>
+        <button type="button">Сравнить</button>
+      </li>
+      <li>
+        <button type="button">Корзина</button>
+      </li>
+    </ul>
+
+    <ul class="catalog-button">
+      <li>
+        <!-- <button type="button">Каталог товаров</button> -->
+        <a href="catalog.html">Каталог товаров</a>
+      </li>
+    </ul>
 
     <ul class="header-menu-main">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
+
   </header>
+
+
   <main class="container">
       <section>
           <h2>О нас</h2>
@@ -34,12 +54,12 @@
             <li>
               <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
               DEVICE работает со многими транспортными компаниями:</p>
+              <ul>
+                  <li>Деловые линии</li>
+                  <li>Автотрейдинг</li>
+                  <li>ЖелДорЭкспедиция</li>
+              </ul>
             </li>
-          </ul>
-          <ul>
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
           </ul>
           <button class="button button-popup">Подробнее о нас</button>
         </section>
@@ -55,7 +75,7 @@
     <div class="logo-footer">
       <img src="img/footer-logo.png" width="163" height="35" alt="Логотип в футере">
     </div>
-    <ul class="footer-menu-sec">
+    <ul class="footer-auth_none-block">
         <li><button type="button">Войти</button></li>
         <li><button type="button">Сравнить</button></li>
         <li><button type="button">Корзина</button></li>
