@@ -45,29 +45,43 @@
       </ul>
 
       <!-- catalog-filters-section-begin -->
-      <section>
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <hr>
-          <h3>Цвет</h3>
-
-          <ul class="filter-list select">
-              <li class="active"><span></span>Черный</li>
-              <li><span></span>Белый</li>
-              <li class="active"><span></span>Синий</li>
-              <li class="active"><span></span>Красный</li>
-              <li><span></span>Розовый</li>
-          </ul>
-
-          <hr>
-
-          <h3>Bluetooth</h3>
-
-            <ul class="filter-list checkbox">
-                <li class="active"><span></span>Есть</li>
-                <li><span></span>Нет</li>
+      <aside class="filter">
+          <h2>Фильтр:</h2>
+          <section class="range">
+            <h3>Стоимость:</h3>
+            <span></span>
+          </section>
+          <section class="colors">
+            <h3>Цвет</h3>
+            <ul class="filter-list select">
+                <li class="active"><span></span>Черный</li>
+                <li><span></span>Белый</li>
+                <li class="active"><span></span>Синий</li>
+                <li class="active"><span></span>Красный</li>
+                <li><span></span>Розовый</li>
             </ul>
-
+          </section>
+          <section class="bluetooth">
+              <h3>Bluetooth</h3>
+              <ul class="filter-list checkbox">
+                  <li class="active"><span></span>Есть</li>
+                  <li><span></span>Нет</li>
+              </ul>
+          </section>
         <button class="button" type="submit">Показать</button>
+      </aside>
+
+      <section class="sort">
+        <h2>Сортировка:</h2>
+        <ul>
+          <li><button class="button button-active">По цене</button></li>
+          <li><button class="button">По типу</button></li>
+          <li><button class="button">По популярности</button></li>
+        </ul>
+        <ul class="arrows">
+          <li><button><img src="#" alt="иконка стрелки "></button></li>
+          <li><button><img src="#" alt="по-убыванию активная"></button></li>
+        </ul>
       </section>
 
       <!-- catalog-list-section-begin -->
