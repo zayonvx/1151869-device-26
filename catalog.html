@@ -65,7 +65,11 @@
           <form action="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Стоимость</legend>
-              <input type="range" name="cost" id="filter-cost" min="0" max="5000" step="1">
+              <input type="range" name="cost" id="filter-cost" min="0" max="11000" list="costList">
+              <datalist id="сostList">
+                <option value="0" label="от 0"></option>
+                <option value="5000" label="до 5000"></option>
+              </datalist>
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
