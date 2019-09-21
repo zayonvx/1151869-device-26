@@ -1,0 +1,55 @@
+/* Шрифты */
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gilroy-ExtraBold'),
+  url('/fonts/Gilroy/Gilroy-ExtraBold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gilroy-Light'),
+  url('/fonts/Gilroy/Gilroy-Light.otf') format('otf');
+}
+
+/* Глобальные стили */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Хедер */
+
+.main-header {
+  color: #000000;
+  letter-spacing: 0.15px;
+  background-color: #ffc600;
+
+}
+
+.user-search {
+  opacity: .3;
+}
+
+.user-navigation {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24;
+  letter-spacing: 3.6px;
+}
