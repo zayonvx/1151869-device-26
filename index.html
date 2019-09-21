@@ -11,18 +11,18 @@
       <ul class="user-search">
           <li><input type="search" placeholder="Поиск по сайту"></li>
       </ul>
-  
+
       <ul class="header-auth_none-block">
           <li><a href="login.html" class="button popup-open">Войти</a></li>
           <li><a href="compare.html" class="button popup-open">Сравнить</a></li>
           <li><a href="cart.html" class="button popup-open">Корзина</a></li>
       </ul>
-  
+
       <nav class="user-navigation">
               <ul class="catalog-button">
           <li><a href="catalog.html">Каталог товаров</a></li>
       </ul>
-      
+
       <ul class="header-menu-main">
           <li><a href="delivery.html" class="button popup-open">Доставка</a></li>
           <li><a href="guarantee.html" class="button popup-open">Гарантия</a></li>
@@ -187,8 +187,27 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
         проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="map.html"><img src="img/map.jpg" height="222" width="560" alt="карта"></a>
-        <a href="write-us.html" class="button button-popup">Напишите нам</a>
+        <a href="#"><img src="img/map.jpg" height="222" width="560" alt="карта"></a>
+        <section class="map">
+            <img src="img/map-big.jpg" width="992" height="591" alt="Адрес: Город Москва, улица Строителей">
+            <a href="index.html"><img src="img/svg/modal-close.svg" width="55" height="55" alt="Иконка закрытия модального окна"></a>
+        </section>
+        <a href="#" class="button button-popup">Напишите нам</a>
+        <section class="writeus">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <label>Ваше имя:<br>
+                    <input type="text" name="name" id="writeus-name-field" placeholder="Имя Фамилия">
+                </label>
+                <label>Ваш e-mail:<br>
+                    <input type="email" name="email" id="writeus-email-field" placeholder="email@example.com">
+                </label><br>
+                <label>Текст письма:<br>
+                    <textarea name="text" id="writeus-text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                </label><br>
+                <input class="button" type="submit" value="Отправить">
+            </form>
+            <a href="index.html"><img src="img/svg/modal-close.svg" width="55" height="55" alt="Иконка закрытия модального окна"></a>
+        </section>
       </section>
   </main>
   <!-- Footer begin -->
