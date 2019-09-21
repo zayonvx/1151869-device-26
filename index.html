@@ -188,26 +188,7 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
         проверить работоспособность покупки. Всякое бывает.</p>
         <a href="#"><img src="img/map.jpg" height="222" width="560" alt="карта"></a>
-        <section class="map">
-            <img src="img/map-big.jpg" width="992" height="591" alt="Адрес: Город Москва, улица Строителей">
-            <a><img src="img/svg/modal-close.svg" width="55" height="55" alt="Иконка закрытия модального окна"></a>
-        </section>
         <a href="#" class="button button-popup">Напишите нам</a>
-        <section class="writeus">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-                <label>Ваше имя:<br>
-                    <input type="text" name="name" id="writeus-name-field" placeholder="Имя Фамилия">
-                </label>
-                <label>Ваш e-mail:<br>
-                    <input type="email" name="email" id="writeus-email-field" placeholder="email@example.com">
-                </label><br>
-                <label>Текст письма:<br>
-                    <textarea name="text" id="writeus-text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-                </label><br>
-                <input class="button" type="submit" value="Отправить">
-            </form>
-            <a><img src="img/svg/modal-close.svg" width="55" height="55" alt="Иконка закрытия модального окна"></a>
-        </section>
       </section>
   </main>
   <!-- Footer begin -->
@@ -234,5 +215,28 @@
       </ul>
     <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy.svg" alt="htmlacademy"></a>
   </footer>
+    <section class="writeus">
+        <h2 class="visibility-hidden">Обратная связь</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <label>Ваше имя:<br>
+                <input type="text" name="name" id="writeus-name-field" placeholder="Имя Фамилия">
+            </label>
+            <label>Ваш e-mail:<br>
+                <input type="email" name="email" id="writeus-email-field" placeholder="email@example.com">
+            </label><br>
+            <label>Текст письма:<br>
+                <textarea name="text" id="writeus-text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </label><br>
+            <button class="button">Отправить</button>
+        </form>
+        <a><img src="img/svg/modal-close.svg" width="55" height="55" alt="Иконка закрытия модального окна"></a>
+    </section>
+
+    <section class="map">
+        <h2 class="visibility-hidden">Карта</h2>
+        <img src="img/map-big.jpg" width="992" height="591" alt="Адрес: Город Москва, улица Строителей">
+        <a><img src="img/svg/modal-close.svg" width="55" height="55" alt="Иконка закрытия модального окна"></a>
+    </section>
+    
   </body>
 </html>
