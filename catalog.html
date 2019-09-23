@@ -3,25 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
   <!-- header-begin -->
-  <header class="main-header">
-    <a href="index.html" class="logo"><img src="img/svg/logo-device.svg" height="35" width="163" alt="Логотип девайс"></a>
-    
-    <ul class="user-search">
-      <li><input type="text" placeholder="Поиск по сайту"></li>
+  <header class="page-header">
+    <a href="index.html" class="logo logo-header"><img src="img/svg/logo-device.svg" height="35" width="163" alt="Логотип девайс"></a>
+
+
+    <input class="search" type="search" placeholder="Поиск по сайту"></li>
+
+
+    <ul class="auth-header">
+      <li><a href="#">Валентин Петухов</a></li>
+      <li class="logoff"><a href="#">Выйти</a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
     </ul>
 
-    <ul class="header-auth-block">
-      <li><a href="#" class="button">Валентин Петухов</a></li>
-      <li><a href="#" class="button button-transparent">Выйти</a></li>
-      <li><a href="#" class="button">Сравнить</a></li>
-      <li><a href="#" class="button">Корзина</a></li>
-    </ul>
-
-    <nav class="user-navigation">
+    <!-- <nav class="navigation-header">
       <ul class="catalog-button">
         <li><a class="button">Каталог товаров</a>
         <li><button><img src="img/svg/plus.svg" alt="кнопка раскрытия меню каталога"></button></li>
@@ -45,18 +48,30 @@
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+    </nav> -->
+
+    <nav class="navigation-header">
+      <ul class="catalog-button">
+        <li><a href="catalog.html">Каталог товаров</a></li>
+      </ul>
+
+      <ul class="menu">
+        <li><a href="delivery.html" class="button popup-open">Доставка</a></li>
+        <li><a href="guarantee.html" class="button popup-open">Гарантия</a></li>
+        <li><a href="contacts.html" class="button popup-open">Контакты</a></li>
+      </ul>
     </nav>
 
   </header>
 
   <!-- main-begin -->
   <main class="container">
-      <h1 class="visibility-hidden">Моноподы для селфи</h1>
+      <h1 class="catalog-group-title">Моноподы для селфи</h1>
 
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-current-item"><a>Моноподы для селфи</a></li>
+        <li><a>Моноподы для селфи</a></li>
       </ul>
 
       <!-- catalog-filters-section-begin -->
@@ -105,7 +120,7 @@
       <!-- catalog-list-section-begin -->
       <section>
 
-        <h2 class="visibility-hidden">Список товаров</h2>
+        <h2 class="vis-hidden">Список товаров</h2>
 
         <ul class="catalog-items-list">
 
@@ -136,7 +151,7 @@
         </ul>
 
         <!-- pagination begin -->
-      
+
         <ul class="catalog-navigation">
           <li><a href="#">Назад</a></li>
           <li>
@@ -153,22 +168,20 @@
   </main>
 
 <!-- footer-begin -->
-  <footer class="footer-main">
+  <footer class="page-footer">
 
-    <div class="logo-footer">
+    <div class="logo logo-footer">
       <img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип девайс">
     </div>
 
-    <ul class="footer-auth-block">
-      <li><button type="button">Валентин Петухов</button></li>
-      <li><button class="button-transparent" type="button">Выйти</button></li>
-      <li><button type="button">Сравнить</button></li>
-      <li><button type="button">Корзина</button></li>
+    <ul class="auth-footer">
+      <li><a href="#">Валентин Петухов</a></li>
+      <li class="logoff"><a>Выйти </a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
     </ul>
-
     <p>г. Москва, ул. Строителей, 15</p>
-
-    <ul class="footer-menu-main">
+    <ul class="menu">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -182,7 +195,7 @@
       <li><a href="#"><img src="img/svg/twitter.svg" alt="twitter"></a></li>
     </ul>
 
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy.svg" alt="htmlacademy"></a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-html.svg" alt="htmlacademy.ru"></a>
   </footer>
   </body>
 </html>
