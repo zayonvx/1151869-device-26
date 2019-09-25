@@ -1,30 +1,30 @@
 /* шрифты */
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroylight.woff") format("woff");
-  src: url("../fonts/gilroylight.woff2") format("woff2");
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff') format('woff');
+  src: url('../fonts/gilroylight.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/gilroyextrabold.woff") format("woff");
-  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff') format('woff');
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff") format("woff");
-  src: url("../fonts/opensans.woff2") format("woff2");
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans.woff') format('woff');
+  src: url('../fonts/opensans.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensanslight.woff") format("woff");
-  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-family: 'Open Sans';
+  src: url('../fonts/opensanslight.woff') format('woff');
+  src: url('../fonts/opensanslight.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
@@ -34,7 +34,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -275,6 +275,16 @@ html {
   background-color: #eeeeee;
 }
 
+.filter h2 {
+  color: #000000;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+
 .filter legend {
   color: #000000;
   font-family: 'Gilroy', sans-serif;
@@ -286,7 +296,6 @@ html {
 
 .filter label {
   color: #000000;
-  font-family: 'OpenSans', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
@@ -318,3 +327,135 @@ html {
   line-height: 24px;
   letter-spacing: 0.16px;
 }
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-list-item h3 {
+  font-family: 'Gilroy', sans-serif;
+  color: #000;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+}
+
+.slider-list-item p {
+  color: #464646;
+  letter-spacing: 0.15px;
+}
+
+.slider-list-item span {
+  font-family: 'Gilroy', sans-serif;
+  color: #fff;
+  background-color: rgba(240,197,46, .5);
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179.2px;
+  letter-spacing: 0.36px;
+}
+
+.features tr:first-child   {
+  font-family: 'Gilroy', sans-serif;
+  color: #000000;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.features tr:last-child {
+ color: #464646;
+ font-size: 13px;
+ font-weight: 300;
+ line-height: 20px;
+ letter-spacing: 0.13px;
+}
+
+.products ul {
+  list-style: none;
+}
+
+
+.products-item span {
+  font-family: 'Gilroy', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.products-item span:active {
+  opacity: .3;
+}
+
+.services {
+  background: #e5e5e5;
+}
+
+.services ul {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-family: 'Gilroy', sans-serif;
+  color: #000000;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+}
+
+.partners ul {
+  list-style: none;
+}
+
+.sort h2 {
+  font-family: 'Gilroy', sans-serif;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort button {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: .3;
+  border: none;
+  background: transparent;
+}
+
+.sort .button-active {
+  opacity: 1;
+}
+
+.catalog-navigation,
+.pagination-list {
+  list-style: none;
+}
+
+.catalog-navigation a {
+  font-family: 'Gilroy', sans-serif;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+/* Не знаю стоит ли делать сейчас наведение с иконками партнеров */
+
+
+
+
+
