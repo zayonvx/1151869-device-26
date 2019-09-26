@@ -452,6 +452,19 @@ html {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
+  opacity: 1;
+}
+
+.pagination-item a {
+  opacity: .3;
+}
+
+.pagination-item-current a {
+  opacity: 1;
+}
+
+.pagination-step a:active {
+  opacity: .3;
 }
 /* Не знаю стоит ли делать сейчас наведение с иконками партнеров */
 
