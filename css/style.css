@@ -120,7 +120,7 @@ html {
 
 .navigation-header a,
 .menu a {
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -149,7 +149,7 @@ html {
 }
 
 .about h2 {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 800;
@@ -170,7 +170,7 @@ html {
 }
 
 .about li {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 800;
@@ -182,7 +182,7 @@ html {
 }
 
 .contacts h2 {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 800;
@@ -247,7 +247,7 @@ html {
 
 .catalog-group-title {
   color: #000000;
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -277,7 +277,7 @@ html {
 
 .filter h2 {
   color: #000000;
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -287,7 +287,7 @@ html {
 
 .filter legend {
   color: #000000;
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -312,7 +312,7 @@ html {
 
 .catalog-item span {
   color: #000000;
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -321,7 +321,7 @@ html {
 
 .catalog-item-price {
   color: inherit;
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -333,7 +333,7 @@ html {
 }
 
 .slider-list-item h3 {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000;
   font-size: 47px;
   font-weight: 800;
@@ -347,7 +347,7 @@ html {
 }
 
 .slider-list-item span {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #fff;
   background-color: rgba(240,197,46, .5);
   font-size: 179px;
@@ -357,7 +357,7 @@ html {
 }
 
 .features tr:first-child   {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 36px;
   line-height: 48px;
@@ -378,7 +378,7 @@ html {
 
 
 .products-item span {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: 800;
@@ -399,7 +399,7 @@ html {
 }
 
 .services-item h3 {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 800;
@@ -412,7 +412,7 @@ html {
 }
 
 .sort h2 {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 800;
@@ -445,7 +445,7 @@ html {
 }
 
 .catalog-navigation a {
-  font-family: 'Gilroy', sans-serif;
+font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 800;
