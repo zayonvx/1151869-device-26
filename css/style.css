@@ -109,11 +109,36 @@ html {
   height: 17px;
 }
 
+.header-top-wrapper {
+  display: flex;
+  padding-top: 53px;
+  padding-left: 63px;
+  padding-right: 61px;
+  justify-content: space-between;
+}
+
+/* Лого */
+
+.page-header .logo {
+  position: absolute;
+  top: -19px;
+  left: 60px;
+}
+
+.logo {
+  width: 163px;
+  height: 35px;
+}
+
+/* Меню */
+
 .auth-header,
 .auth-footer,
 .menu,
 .catalog-button {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -192,11 +217,11 @@ html {
   opacity: .3;
 }
 
-.search:hover {
+.input-search:hover {
   opacity: .6;
 }
 
-.search:focus {
+.input-search:focus {
   opacity: 1;
 }
 
@@ -289,6 +314,11 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  margin: 0;
+}
+
+.about p:first-of-type {
+  margin-bottom: 30px;
 }
 
 .about p:first-of-type {
@@ -308,6 +338,10 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
+}
+
+.about .button {
+  margin-top: 80px;
 }
 
 .contacts {
@@ -336,7 +370,10 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   margin-bottom: 80px;
 }
 
+/* Футер */
+
 .page-footer {
+  position: relative;
   background-color: #464646;
   color: #fff;
   padding: 65px 0;
@@ -426,6 +463,37 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 
 .auth-logoff a {
   opacity: .3;
+}
+
+.footer-middle-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: center;
+  align-self: center;
+}
+
+.footer-middle-wrapper .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 423px;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+}
+
+.footer-bottom-wrapper::before {
+  content: '';
+  border-bottom: 7px solid #ffc600;
+  height: 7px;
+  width: 80px;
 }
 
 .social {
