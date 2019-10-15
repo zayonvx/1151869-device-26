@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="main">
+<body class="inner-page">
   <!-- header-begin -->
   <header class="page-header container">
     <div class="logo-header-wrapper">
@@ -22,8 +22,9 @@
         <input type="search" class="search" name="search" placeholder="Поиск по сайту">
         <a href="#" class="search-button"><span class="search-button-text">Найти</span></a>
       </form>
-      <ul class="auth-header">
-        <li class="auth-login"><a href="#">Войти</a></li>
+      <ul class="auth-header authorized">
+        <li class="auth-login"><a href="#">Валентин Петухов</a></li>
+        <li class="auth-logoff"><a href="#">Выйти</a></li>
         <li class="auth-compare"><a href="#">Сравнить</a></li>
         <li class="auth-cart"><a href="#">Корзина</a></li>
       </ul>
@@ -62,19 +63,20 @@
     </nav>
   </header>
   <!-- main-begin -->
-  <main class="container">
+  <main>
+    <div class="container">
     <div class="main-wrapper-top">
       <h1 class="catalog-group-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог товаров</a></li>
         <li><a>Моноподы для селфи</a></li>
       </ul>
     </div>
+    </div>
     <!-- catalog-filters-section-begin -->
-    <div class="main-wrapper-middle">
       <aside class="filter">
-        <h2>Фильтр:</h2>
+
         <form action="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
@@ -163,6 +165,39 @@
     </div>
   </main>
   <!-- footer-begin -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="footer-top-wrapper">
+        <div class="logo-footer-wrapper">
+          <a class="logo">
+            <img src="img/svg/logo-device-yellow.svg" width="163" height="35" alt="Логотип Девайс">
+          </a>
+        </div>
+        <ul class="auth-footer">
+          <li class="auth-login-footer"><a href="#">Войти</a></li>
+          <li class="auth-compare-footer"><a href="#">Сравнить</a></li>
+          <li class="auth-cart-footer"><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle-wrapper">
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul class="menu menu-footer">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-bottom-wrapper">
+        <ul class="social-list">
+          <li><a href="#"><img src="img/svg/fb.svg" height="32" width="32" alt="facebook"></a></li>
+          <li><a href="#"><img src="img/svg/instagram.svg" height="32" width="32" alt="instagram"></a></li>
+          <li><a href="#"><img src="img/svg/twitter.svg" height="32" width="32" alt="twitter"></a></li>
+        </ul>
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-html.svg" height="34" width="26" alt="htmlacademy.ru"></a>
+      </div>
+    </div>
+  </footer->
 </body>
 
 </html>

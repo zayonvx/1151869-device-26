@@ -100,8 +100,8 @@ html {
 }
 
 .inner-page .page-header {
-  padding-bottom: 56px;
-  margin-bottom: 44px;
+  padding-bottom: 53px;
+  margin-bottom: 38px;
 }
 
 .header-top-wrapper {
@@ -130,6 +130,7 @@ html {
   justify-content: space-between;
   align-items: baseline;
 }
+
 
 .auth-header a:hover,
 .auth-header a:focus {
@@ -179,12 +180,20 @@ html {
   margin-right: 177px;
 }
 
-.active .auth-login {
+.authorized .auth-login {
   margin-right: 20px;
 }
 
-.active .auth-logoff {
-  margin-right: 65px;
+.authorized .auth-logoff {
+  margin-right: auto;
+}
+
+.authorized .auth-compare {
+  margin-right: 40px;
+}
+
+.auth-logoff {
+  opacity: .3;
 }
 
 .logo-header-wrapper {
@@ -353,6 +362,13 @@ html {
   padding-bottom: 34px;
 }
 
+.inner-page .catalog-menu {
+  bottom: -115px;
+  left: 0px;
+  padding-left: 60px;
+  background-color:#f7e296;
+}
+
 .catalog-menu a {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
@@ -464,9 +480,11 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
+  padding: 0;
+  margin: 0;
   font-weight: 800;
   line-height: 48px;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -478,6 +496,17 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   height: 14px;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: '';
+  width: 4px;
+  height: 7px;
+  background-image: url('../img/svg/nav-arrow.svg');
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: 15px;
 }
 
 .breadcrumbs a {
@@ -492,9 +521,6 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   opacity: .6;
 }
 
-.main-wrapper-middle {
-  display: flex;
-}
 
 .filter {
   background-color: #eeeeee;
