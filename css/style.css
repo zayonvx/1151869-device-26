@@ -89,10 +89,13 @@ html {
   flex-direction: column;
   background-color: rgba(240,197,46, .5);
   color: #000000;
-
   margin-top: 40px;
-  margin-bottom: -110px;
-  padding: 53px 61px 169px 63px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.main .page-header {
+  min-height: 300px;
 }
 
 .inner-page .page-header {
@@ -105,14 +108,15 @@ html {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
-  height: 17px;
+  margin-bottom: 35px;
 }
 
 .auth-header,
 .auth-footer,
 .menu,
-.catalog-button {
+.catalog-list,
+.catalog-menu,
+.catalog-menu-col {
   list-style: none;
 }
 
@@ -161,7 +165,7 @@ html {
 }
 
 .auth-login {
-  margin-right: 218px;
+  margin-right: 177px;
 }
 
 .active .auth-login {
@@ -172,23 +176,71 @@ html {
   margin-right: 65px;
 }
 
-
-.logo {
-  width: 163px;
-  height: 35px;
+.logo-header-wrapper {
+  margin-bottom: 54px;
+  margin-top: -19px;
 }
 
-.logo-header {
+.logo-header-wrapper .logo {
   position: absolute;
-  top: -20px;
-  left: 60px;
+  height: -20px;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  width: 440px;
+}
+
+.search-form::before {
+  content: '';
+  background-image: url('../img/svg/search.svg');
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  align-self: center;
+  position: absolute;
+  left: 3px;
 }
 
 .search {
-  background-color: transparent;
-  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  opacity: .3;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 40px;
+  width: 355px;
+  background: none;
   border: none;
   outline: none;
+  border-bottom: 2px solid transparent;
+}
+
+.search-button {
+  color: #000000;
+  display: none;
+  width: 85px;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #000000;
+  text-align: center;
+}
+
+.search-button:hover {
+  color: #fff;
+  background-color: #000000;
+}
+
+.search-button:active {
+  display: block;
+}
+
+.search-button:active .search-button-text {
   opacity: .3;
 }
 
@@ -198,6 +250,11 @@ html {
 
 .search:focus {
   opacity: 1;
+  border-bottom-color: #000000
+}
+
+.search:focus+.search-button {
+  display: block;
 }
 
 .auth-header a {
@@ -214,10 +271,6 @@ html {
   height: 17px;
 }
 
-.catalog-button {
-  padding: 0;
-  margin: 0;
-}
 
 .menu-header {
   display: flex;
@@ -231,7 +284,7 @@ html {
 }
 
 .menu-header .menu-delivery {
-  margin-right: 38px;
+  margin-right: 35px;
 }
 
 .menu-header .menu-harranty {
@@ -261,6 +314,60 @@ html {
 .menu a:active,
 .logo:active {
   opacity: .3;
+}
+
+.catalog-menu-button {
+  display: flex;
+}
+
+.catalog-menu-button::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/svg/plus.svg');
+  align-self: center;
+  margin-left: 16px;
+  opacity: .3;
+}
+
+.catalog-menu {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 60px;
+  padding: 0;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 34px;
+}
+
+.catalog-menu a {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.catalog-menu li:not(:last-child) {
+  margin-right: 35px;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-menu-col {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-menu-button:hover+.catalog-menu {
+  display: flex;
 }
 
 .section-columns {

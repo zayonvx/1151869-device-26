@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="main">
   <header class="page-header container">
-    <a class="logo logo-header"><img src="img/svg/logo-device.svg" height="35" width="163" alt="Логотип девайс"></a>
+    <div class="logo-header-wrapper">
+      <a class="logo" >
+        <img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
+      </a>
+    </div>
+
     <div class="header-top-wrapper">
-      <input class="search" type="search" placeholder="Поиск по сайту">
+      <form action="search.php" method="GET" class="search-form">
+        <input type="search" class="search" name="search" placeholder="Поиск по сайту">
+        <a href="#" class="search-button"><span class="search-button-text">Найти</span></a>
+      </form>
       <ul class="auth-header">
           <li class="auth-login"><a href="#">Войти</a></li>
           <li class="auth-compare"><a href="#">Сравнить</a></li>
@@ -20,14 +28,36 @@
     </div>
 
     <nav class="navigation-header">
-      <ul class="catalog-button">
-        <li><a href="catalog.html">Каталог товаров</a></li>
+      <ul class="catalog-list">
+        <li>
+          <a class="catalog-menu-button" href="catalog.html">Каталог товаров</a>
+          <ul class="catalog-menu container">
+            <li>
+              <ul class="catalog-menu-col">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="catalog-menu-col">
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="catalog-menu-col">
+                <li><a href="№">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
 
       <ul class="menu menu-header">
-          <li class="menu-delivery"><a href="#">Доставка</a></li>
-          <li class="menu-harranty"><a href="#">Гарантия</a></li>
-          <li class="menu-contacts"><a href="#">Контакты</a></li>
+        <li class="menu-delivery"><a href="#">Доставка</a></li>
+        <li class="menu-harranty"><a href="#">Гарантия</a></li>
+        <li class="menu-contacts"><a href="#">Контакты</a></li>
       </ul>
     </nav>
 
