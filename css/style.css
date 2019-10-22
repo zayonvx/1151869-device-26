@@ -53,10 +53,6 @@ body {
   overflow: hidden;
 }
 
-.modal {
-  display: none;
-}
-
 img {
   max-width: 100%;
 }
@@ -355,15 +351,12 @@ html {
   z-index: 2;
   padding: 0;
   margin: 0;
+  padding-left: 60px;
   padding-top: 17px;
   padding-bottom: 34px;
-}
-
-.inner-page .catalog-menu {
-  bottom: -115px;
-  left: 0px;
-  padding-left: 60px;
   background-color:#f7e296;
+  width: 1160px;
+  left: 0px;
 }
 
 .catalog-menu a {
@@ -407,7 +400,7 @@ html {
 }
 
 .about h2 {
-font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 800;
@@ -640,57 +633,114 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 
 .slider-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.slider-list-item h3 {
+.slider-content-header {
   font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000;
+  margin: 0;
+  padding: 0;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
+  margin-top: -88px;
+  margin-bottom: 19px;
 }
 
-.slider-list-item p {
+.slider-content-text {
   color: #464646;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
 }
 
-.slider-list-item span {
-font-family: 'Gilroy', 'Arial', sans-serif;
+.slide-number {
+  font-family: 'Gilroy', 'Arial', sans-serif;
   color: #fff;
-  background-color: rgba(240,197,46, .5);
-  font-size: 179px;
+  font-size: 179.2px;
   font-weight: 800;
   line-height: 179.2px;
+  align-self: flex-end;
+  margin-right: -11px;
+  margin-top: -12px;
 }
 
-.features tr:first-child   {
-font-family: 'Gilroy', 'Arial', sans-serif;
+.features {
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+}
+
+.features-header   {
+  font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 36px;
   line-height: 48px;
 }
 
-.features tr:last-child {
- color: #464646;
- font-size: 13px;
- font-weight: 300;
- line-height: 20px;
+.features-description {
+  color: #464646;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.features-description td {
+  padding-right: 75px;
+}
+
+.features-description td:last-child {
+  padding-right: 0;
 }
 
 .products ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.products-item-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 
-.products-item span {
-font-family: 'Gilroy', 'Arial', sans-serif;
+.products-item-header {
+  font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+  order: 2;
+  margin: 0;
 }
 
-.products-item span:active {
+.products-image-wrapper {
+  background-color: #f7e296;
+  width: 160px;
+  height: 160px;
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.products-item:nth-child(2) .products-image-wrapper {
+  align-items: flex-end;
+}
+
+.products-item-link:hover .products-image-wrapper {
+  background-color: #f0c52e;
+}
+
+.products-item-link:active .products-item-header,
+.products-item-link:active .products-item-image {
   opacity: .3;
 }
 
@@ -700,10 +750,29 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 
 .services ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-item img {
+  order: 2;
+  flex-flow: wrap
+}
+
+
+
 .services-item h3 {
-font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 800;
@@ -770,7 +839,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 
 .carousel {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 97px;
+  margin-top: -112px;
 }
 
 
@@ -947,3 +1017,134 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 .academy-logo:active {
   opacity: .3;
 }
+
+.slider-list-item {
+  display: none;
+  justify-content: space-between;
+}
+
+.slider-radio:nth-child(1):checked ~ .slider-list .slider-list-item:nth-child(1),
+.slider-radio:nth-child(2):checked ~ .slider-list .slider-list-item:nth-child(2),
+.slider-radio:nth-child(3):checked ~ .slider-list .slider-list-item:nth-child(3) {
+  display: flex;
+}
+
+.slide-2 .slider-image-wrapper {
+  margin-left: 116px;
+  margin-top: 13px;
+}
+
+.slide-1 .slider-image-wrapper {
+  margin-left: 90px;
+}
+
+.slide-3 .slider-image-wrapper {
+  margin-left: 30px;
+  margin-top: 65px;
+}
+
+
+.slider-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  position: relative;
+  width: 500px;
+}
+
+.slider-content-wrapper::before {
+  content: '';
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 37px;
+}
+
+.slider-number {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.button {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 800;
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  width: 220px;
+  vertical-align: center;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+}
+
+.button::before {
+  content: '';
+  height: 8px;
+  width: 220px;
+  background-color: #f0c52e;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: -1;
+}
+
+.button:hover::before {
+  height: 40px;
+  top: -5px;
+}
+
+.button:active {
+  opacity: .6;
+}
+
+.radio-control {
+  position: absolute;
+  top: 327px;
+  right: 85px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.radio-control li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.radio-control li:not(:last-child){
+  margin-right: 20px;
+}
+
+.slider-list-item {
+  display: none;
+}
+
+.slider-radio-1:checked~.slider-list .slide-1,
+.slider-radio-2:checked~.slider-list .slide-2,
+.slider-radio-3:checked~.slider-list .slide-3 {
+  display: flex;
+}
+
+.slider-radio-1:checked~.radio-control label[for="slider-radio-1"],
+.slider-radio-2:checked~.radio-control label[for="slider-radio-2"],
+.slider-radio-3:checked~.radio-control label[for="slider-radio-3"] {
+  background-image: url("../img/svg/slider-button.svg");
+}
+
+.radio-control label {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/svg/slider-button-empty.svg');
+  background-size: cover;
+}
+
+.modal {
+  display: none;
+}
+
