@@ -222,19 +222,65 @@
     <!-- services begin -->
     <section class="services">
       <div class="container">
+        <h2 class="vis-hidden">Услуги</h2>
         <div class="services-wrapper">
-          <h2 class="vis-hidden">Список услуг</h2>
-          <ul>
-            <li><button type="button" class="button button-active">Доставка</button></li>
-            <li><button type="button" class="button">Гарантия</button></li>
-            <li><button type="button" class="button">Кредит</button></li>
-          </ul>
-          <div class="services-item">
-            <h3>Доставка</h3>
-            <img src="img/delivery.svg" height="164" width="136" alt="Иконка-синоним доставки">
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br>
-              заработаем, поднимая его на ваш этаж.</p>
+          <input class="services-delivery vis-hidden" type="radio" name="services" id="services-delivery" checked>
+          <input class="services-warranty vis-hidden" type="radio" name="services" id="services-warranty">
+          <input class="services-credit vis-hidden" type="radio" name="services" id="services-credit">
+          <div class="services-list-wrapper">
+            <ul class="services-list">
+              <li>
+                <label class="button button-delivery" for="services-delivery">Доставка</label>
+              </li>
+              <li>
+                <label class="button button-warranty" for="services-warranty">Гарантия</label>
+              </li>
+              <li>
+                <label class="button button-credit" for="services-credit">Кредит</label>
+              </li>
+            </ul>
           </div>
+          <ul class="services-item-wrapper">
+            <li class="services-item services-delivery-item">
+              <div class="services-item-wrapper">
+                <h3 class="services-header">Доставка</h3>
+                <p class="services-text">
+                  Мы с удовольствием доставим ваш товар прямо к вашему<br>
+                  подъезду совершенно бесплатно! Ведь мы неплохо<br>
+                  заработаем, поднимая его на ваш этаж.
+                  </p>
+                <div class="services-image-wrapper">
+                  <img src="img/delivery.svg" width="136" height="164" alt="иконка доставки">
+                </div>
+              </div>
+            </li>
+            <li class="services-item services-warranty-item">
+              <div class="services-item-wrapper">
+                <h3 class="services-header">Гарантия</h3>
+                <p class="services-text">
+                  Если из-за возгорания купленного у нас товара у вас сгорит<br>
+                  дом — не переживайте, мы выдадим вам новый.<br>
+                  Товар, не дом, конечно же.
+                </p>
+                <div class="services-image-wrapper">
+                  <img src="img/svg/warranty.svg" width="194" height="171" alt="иконка гарантии">
+                </div>
+              </div>
+            </li>
+            <li class="services-item services-credit-item">
+              <div class="services-item-wrapper">
+                <h3 class="services-header">Кредит</h3>
+                <p class="services-text">
+                  Залезть в долговую яму стало проще! Кредитные<br>
+                  консультанты подберут для вас наиболее выгодные<br>
+                  условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+                <div class="services-image-wrapper">
+                  <img src="img/svg/credit.svg" width="156" height="186"  alt="иконка кредита">
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
