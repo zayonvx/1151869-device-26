@@ -391,17 +391,6 @@ html {
   display: flex;
 }
 
-
-.section-columns::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 7px;
-  background-color: #000000;
-}
-
 .sections-colums .button {
   width: 260px;
 }
