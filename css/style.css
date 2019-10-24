@@ -387,7 +387,7 @@ html {
   margin: 0;
 }
 
-.catalog-menu-wrapper:hover .catalog-menu
+.catalog-menu-wrapper:hover .catalog-menu,
 .catalog-menu-wrapper:focus .catalog-menu {
   display: flex;
 }
@@ -645,7 +645,7 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   align-items: flex-end;
 }
 
-.products-item-link:hover .products-image-wrapper
+.products-item-link:hover .products-image-wrapper,
 .products-item-link:focus .products-image-wrapper {
   background-color: #f0c52e;
 }
