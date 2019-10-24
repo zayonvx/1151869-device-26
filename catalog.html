@@ -76,42 +76,62 @@
       <div class="catalog-columns">
         <!-- catalog-filters-section-begin -->
         <aside class="filter">
-          <h2>Фильтр:</h2>
+          <h2 class="filter-header">Фильтр:</h2>
           <form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
             <fieldset class="filter-item-price">
               <legend>Стоимость</legend>
+              <div class="filter-cost">
+                <div class="filter-cost-control">
+                  <div class="filter-control-scale">
+                    <div class="filter-control-bar"></div>
+                  </div>
+                  <button type="button" class="filter-cost-toogle toogle-min"></button>
+                  <button type="button" class="filter-cost-toogle toogle-max"></button>
+                </div>
+                <div class="filter-cost-range">
+                  <label class="min-cost">от <input type="text" name="min-cost" value="0"></label>
+                  <label class="max-cost">до <input type="text" name="max-cost" value="5000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-item-color">
-              <legend>Цвет</legend>
+              <legend class="filter-legend-color">Цвет</legend>
               <ul>
-                <li><input id="filter-black" name="filter-black" type="checkbox" class="vis-hidden" checked><label for="filter-black">Черный</label></li>
-                <li><input id="filter-white" name="filter-white" type="checkbox" class="vis-hidden"><label for="filter-white">Белый</label></li>
-                <li><input id="filter-blue" name="filter-blue" type="checkbox" class="vis-hidden" checked><label for="filter-blue">Синий</label></li>
-                <li><input id="filter-red" name="filter-red" type="checkbox" class="vis-hidden" checked><label for="filter-red">Красный</label></li>
-                <li><input id="filter-pink" name="filter-pink" type="checkbox" class="vis-hidden" disabled><label for="filter-pink">Розовый</label></li>
+                <li><input id="filter-black" name="filter-black" type="checkbox" class="vis-hidden filter-checkbox"
+                    checked><label for="filter-black">Черный</label></li>
+                <li><input id="filter-white" name="filter-white" type="checkbox"
+                    class="vis-hidden filter-checkbox"><label for="filter-white">Белый</label></li>
+                <li><input id="filter-blue" name="filter-blue" type="checkbox" class="vis-hidden filter-checkbox"
+                    checked><label for="filter-blue">Синий</label></li>
+                <li><input id="filter-red" name="filter-red" type="checkbox" class="vis-hidden filter-checkbox"
+                    checked><label for="filter-red">Красный</label></li>
+                <li><input id="filter-pink" name="filter-pink" type="checkbox" class="vis-hidden filter-checkbox"
+                    disabled><label for="filter-pink">Розовый</label></li>
               </ul>
             </fieldset>
             <fieldset class="filter-item-bluetooth">
-              <legend>Bluetooth</legend>
+              <legend class="filter-legend-bluetooth">Bluetooth</legend>
               <ul>
-                <li><input id="filter-bluetooth-1" class="vis-hidden" type="radio" name="filter-bluetooth"><label for="filter-bluetooth-1">Есть</label></li>
-                <li><input id="filter-bluetotth-0" class="vis-hidden" type="radio" name="filter-bluetooth"><label for="filter-bluetotth-0">Нет</label></li>
+                <li><input id="filter-bluetooth-1" class="vis-hidden filter-radio" type="radio" name="filter-bluetooth"
+                    checked><label for="filter-bluetooth-1">Есть</label></li>
+                <li><input id="filter-bluetotth-0" class="vis-hidden filter-radio" type="radio"
+                    name="filter-bluetooth"><label for="filter-bluetotth-0">Нет</label></li>
               </ul>
             </fieldset>
-            <button class="button" type="submit" name="filter-button">Показать</button>
+            <button class="button button-filter" type="submit" name="filter-button">Показать</button>
           </form>
         </aside>
         <div class="catalog-column">
           <section class="sort">
-            <h2>Сортировка:</h2>
+            <h2 class="sort-header">Сортировка:</h2>
             <ul class="sort-type">
               <li><button class="button button-active">По цене</button></li>
               <li><button class="button">По типу</button></li>
               <li><button class="button">По популярности</button></li>
             </ul>
             <ul class="sort-arrows">
-              <li><button><span class="vis-hidden"></span></button></li>
-              <li><button><span class="vis-hidden"></span></button></li>
+              <li><button class="sort-arrows-up sort-arrows-active"><span class="vis-hidden"></span></button></li>
+              <li><button class="sort-arrows-down"><span class="vis-hidden"></span></button></li>
             </ul>
           </section>
           <div class="catalog-items-wrapper">
@@ -163,7 +183,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item catalog-item-new">
                   <div class="catalog-item-text">
                     <a href="#" class="catalog-item-link">
                       <h3 class="catalog-item-header">Селфи-палка «Следуй за мной»</h3>
