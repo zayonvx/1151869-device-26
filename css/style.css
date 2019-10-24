@@ -253,7 +253,8 @@ html {
   outline: none;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
   color: #fff;
   background-color: #000000;
 }
@@ -266,7 +267,8 @@ html {
   opacity: .3;
 }
 
-.search:hover {
+.search:hover,
+.search:focus {
   opacity: .6;
 }
 
@@ -385,7 +387,8 @@ html {
   margin: 0;
 }
 
-.catalog-menu-wrapper:hover .catalog-menu {
+.catalog-menu-wrapper:hover .catalog-menu
+.catalog-menu-wrapper:focus .catalog-menu {
   display: flex;
 }
 
@@ -522,7 +525,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   line-height: 24px;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
   opacity: .6;
 }
 
@@ -641,7 +645,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   align-items: flex-end;
 }
 
-.products-item-link:hover .products-image-wrapper {
+.products-item-link:hover .products-image-wrapper
+.products-item-link:focus .products-image-wrapper {
   background-color: #f0c52e;
 }
 
@@ -682,7 +687,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 }
 
 
-.logo:hover {
+.logo:hover,
+.logo:focus {
   opacity: .6
 }
 
@@ -723,13 +729,17 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   display: flex;
 }
 
-.auth-footer a:hover {
+.auth-footer a:hover,
+.auth-footer a:focus {
   opacity: 1;
 }
 
 .auth-login-footer:hover::before,
 .auth-cart-footer:hover::before,
-.auth-compare-footer:hover::before {
+.auth-compare-footer:hover::before,
+.auth-login-footer:focus::before,
+.auth-cart-footer:focus::before,
+.auth-compare-footer:focus::before {
   opacity: .6;
 }
 
@@ -820,7 +830,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   opacity: .6;
 }
 
-.social-list li:hover {
+.social-list li:hover,
+.social-list li:focus {
   opacity: 1;
 }
 
@@ -828,7 +839,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   opacity: .3;
 }
 
-.academy-logo:hover {
+.academy-logo:hover,
+.academy-logo:focus {
   opacity: .6;
 }
 
@@ -918,7 +930,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   z-index: -1;
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus::before {
   height: 100%;
 }
 
@@ -1118,7 +1131,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   background-image: url('../img/logo-1.png');
 }
 
-.sides-item-1:hover {
+.sides-item-1:hover,
+.sides-item-1:focus {
   background-image: url('../img/logo-1-hover.png');
 }
 
@@ -1126,7 +1140,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   background-image: url('../img/logo-2.png');
 }
 
-.sides-item-2:hover {
+.sides-item-2:hover,
+.sides-item-2:focus {
   background-image: url('../img/logo-2-hover.png');
 }
 
@@ -1134,7 +1149,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   background-image: url('../img/logo-3.png');
 }
 
-.sides-item-3:hover {
+.sides-item-3:hover,
+.sides-item-3:focus {
   background-image: url('../img/logo-3-hover.png');
 }
 
@@ -1142,7 +1158,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   background-image: url('../img/logo-4.png');
 }
 
-.sides-item-4:hover {
+.sides-item-4:hover,
+.sides-item-4:focus {
   background-image: url('../img/logo-4-hover.png');
 }
 
@@ -1280,7 +1297,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   transform: rotate(-45deg);
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   background-color: #f0c52e;
 }
 
@@ -1694,7 +1712,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   background-color: rgba(238, 238, 238, .7);
 }
 
-.catalog-item-image:hover .catalog-item-misc {
+.catalog-item-image:hover .catalog-item-misc,
+.catalog-item-image:focus .catalog-item-misc {
   display: flex;
 }
 
@@ -1838,7 +1857,8 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000000;
 }
 
-.pagination-list a:hover {
+.pagination-list a:hover,
+.pagination-list a:focus {
   color: #666666;
 }
 
