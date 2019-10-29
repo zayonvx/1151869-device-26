@@ -708,11 +708,7 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 }
 
 .inner-page .auth-footer {
-  display: flex;
   width: 480px;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
 }
 
 .auth-footer a {
@@ -833,16 +829,16 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   margin-left: -55px;
 }
 
-.social-list li {
+.social-list a {
   opacity: .6;
 }
 
-.social-list li:hover,
-.social-list li:focus {
+.social-list a:hover,
+.social-list a:focus {
   opacity: 1;
 }
 
-.social-list li:active {
+.social-list a:active {
   opacity: .3;
 }
 
@@ -1876,7 +1872,7 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 
 .pagination-step a {
   display: block;
-  padding: 25px 30px;
+  padding: 24px 30px 23px 30px;
 }
 
 .pagination-step a:hover,
@@ -1890,4 +1886,12 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 
 .inner-page .page-footer {
   margin-top: 0;
+}
+
+.auth-footer .authorized {
+  justify-content: ;
+}
+
+.authorized .auth-logoff-footer {
+  margin-left: -15px;
 }
