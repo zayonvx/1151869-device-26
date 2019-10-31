@@ -474,7 +474,7 @@ font-family: 'Gilroy', 'Arial', sans-serif;
   background-color: #000000;
 }
 
-.map-popup img {
+.open-map img {
   margin-bottom: 59px;
 }
 
@@ -1192,20 +1192,25 @@ font-family: 'Gilroy', 'Arial', sans-serif;
 .writeus {
   display: none;
   width: 960px;
+  height: 580px;
   padding: 90px 100px;
-  top: 10%;
-  left: 33%;
+  top: 50%;
+  left: 50%;
+  margin-top: -290px;
+  margin-left: -480px;
 }
 
 .map {
   display: none;
   width: 960px;
   height: 560px;
-  bottom: 5%;
-  left: 33%;
   background-image: url('../img/map-big.jpg');
   background-position: center center;
   background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -480px;
 }
 
 .modal-show {
