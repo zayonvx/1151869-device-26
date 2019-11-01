@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс - Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="inner-page">
@@ -36,20 +36,20 @@
           <ul class="catalog-menu">
             <li>
               <ul class="catalog-menu-col">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a>Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#" aria-label="виртуальная реальность">Виртуальная реальность</a></li>
+                <li><a aria-label="Моноподы для селфи">Моноподы для селфи</a></li>
+                <li><a href="#" aria-label="Экшн-камеры">Экшн-камеры</a></li>
               </ul>
             </li>
             <li>
               <ul class="catalog-menu-col">
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
+                <li><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></li>
+                <li><a href="#" aria-label="Умные часы">Умные часы</a></li>
               </ul>
             </li>
             <li>
               <ul class="catalog-menu-col">
-                <li><a href="№">Квадрокоптеры</a></li>
+                <li><a href="№" aria-label="Квадрокоптеры">Квадрокоптеры</a></li>
               </ul>
             </li>
           </ul>
@@ -130,8 +130,8 @@
               <li><a class="button">По популярности</a></li>
             </ul>
             <ul class="sort-arrows">
-              <li><a class="sort-arrows-up sort-arrows-active"><span class="vis-hidden"></span></a></li>
-              <li><a class="sort-arrows-down"><span class="vis-hidden"></span></a></li>
+              <li><a class="sort-arrows-up sort-arrows-active" aria-label="стрелка сортировки по возрастанию"></a></li>
+              <li><a class="sort-arrows-down" aria-label="стрелка сортировки по убыванию"></a></li>
             </ul>
           </section>
           <div class="catalog-items-wrapper">
@@ -241,7 +241,7 @@
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
+        <a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-bottom-wrapper">
         <ul class="social-list">
@@ -250,7 +250,7 @@
           <li><a href="#"><img src="img/svg/twitter.svg" height="32" width="32" alt="twitter"></a></li>
         </ul>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-html.svg"
-            height="34" width="26" alt="htmlacademy.ru"></a>
+            height="34" width="26" alt="htmlacademy.ru" aria-label="Ссылка на страницу Академии"></a>
       </div>
     </div>
   </footer>

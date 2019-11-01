@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="main">
@@ -142,13 +142,13 @@
         </ul>
         <ul class="radio-control">
           <li class="radio-control-item">
-            <label for="slider-radio-1"></label>
+            <label aria-labelledby="селфи палка" for="slider-radio-1"></label>
           </li>
           <li class="radio-control-item">
-            <label for="slider-radio-2"></label>
+            <label aria-labelledby="фитнес-браслеты" for="slider-radio-2"></label>
           </li>
           <li class="radio-control-item">
-            <label for="slider-radio-3"></label>
+            <label aria-labelledby="квадрокоптеры" for="slider-radio-3"></label>
           </li>
         </ul>
       </div>
@@ -378,7 +378,7 @@
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
+        <a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-bottom-wrapper">
         <ul class="social-list">
@@ -387,11 +387,11 @@
           <li><a href="#"><img src="img/svg/twitter.svg" height="32" width="32" alt="twitter"></a></li>
         </ul>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-html.svg"
-            height="34" width="26" alt="htmlacademy.ru"></a>
+            height="34" width="26" alt="htmlacademy.ru" aria-label="Ссылка на страницу Академии"></a>
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

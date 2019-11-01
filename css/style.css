@@ -1978,3 +1978,7 @@ html {
 .modal-error {
   animation: shake .6s;
 }
+
+.tel {
+  color: #ffffff;
+}
