@@ -1551,7 +1551,7 @@ html {
   margin-right: 29px;
 }
 
-.sort-type button {
+.sort-type .button {
   font-family: 'Open Sans', 'Geneva', sans-serif;
   margin-top: 2px;
   font-size: 14px;
@@ -1564,12 +1564,12 @@ html {
   text-transform: none;
 }
 
-.sort-type button:hover,
-.sort-type button:focus {
+.sort-type .button:hover,
+.sort-type .button:focus {
   opacity: .6;
 }
 
-.sort-type button:active {
+.sort-type .button:active {
   opacity: 1;
 }
 
@@ -1664,6 +1664,11 @@ html {
   position: relative;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
+}
+
+.catalog-item-misc .button-compare {
+  font-family: 'Open Sans', 'Geneva', sans-serif;
+  font-weight: 300;
 }
 
 .catalog-item-new::before {
