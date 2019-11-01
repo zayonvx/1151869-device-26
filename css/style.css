@@ -426,7 +426,7 @@ html {
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 43px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.48px;
 }
 
 .about p {
@@ -504,7 +504,7 @@ html {
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 20px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.47px;
 }
 
 .breadcrumbs {
@@ -566,7 +566,7 @@ html {
   line-height: 56px;
   margin-top: -86px;
   margin-bottom: 19px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.47px;
 }
 
 .slider-content-text {
@@ -840,6 +840,7 @@ html {
   justify-content: space-between;
   width: 141px;
   margin-left: -55px;
+  margin-top: 3px;
 }
 
 .social-list a {
@@ -932,7 +933,7 @@ html {
   text-transform: uppercase;
   border: none;
   background: transparent;
-  letter-spacing: 2.15px;
+  letter-spacing: 3.6px;
 }
 
 .button-slider {
@@ -1065,7 +1066,7 @@ html {
   margin-bottom: 30px;
   margin-top: -27px;
   max-width: 435px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.7px;
 }
 
 .services-item {
@@ -1097,7 +1098,7 @@ html {
   content: '';
   position: absolute;
   top: -15px;
-  right: -273px;
+  right: -257px;
   background-repeat: no-repeat;
   width: 136px;
   height: 164px;
@@ -1108,7 +1109,7 @@ html {
   content: '';
   position: absolute;
   top: -15px;
-  right: -273px;
+  right: -257px;
   background-repeat: no-repeat;
   width: 171px;
   height: 194px;
@@ -1119,7 +1120,7 @@ html {
   content: '';
   position: absolute;
   top: -15px;
-  right: -273px;
+  right: -257px;
   background-repeat: no-repeat;
   width: 156px;
   height: 186px;
@@ -1361,7 +1362,7 @@ html {
 .sort-header {
   padding: 0;
   margin: 0;
-  margin-right: 90px;
+  margin-right: 50px;
   padding-left: 73px;
   font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000;
@@ -1369,7 +1370,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.6px;
 }
 
 .filter-header {
@@ -1383,7 +1384,7 @@ html {
   margin-bottom: 70px;
   padding: 23px 0 23px 60px;
   background-color: #dcdcdc;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.6px;
 }
 
 .filter-form {
@@ -1442,6 +1443,10 @@ html {
 
 .filter-form input:disabled+label {
   color: #a6a6a6;
+}
+
+.filter-form input:disabled+label::before {
+  opacity: .3;
 }
 
 .filter-item-color ul,
@@ -1894,7 +1899,7 @@ html {
 
 .pagination-list a {
   color: #979797;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.6px;
 }
 
 .pagination-item-current a {
@@ -1909,7 +1914,7 @@ html {
 .pagination-step a {
   display: block;
   padding: 24px 30px 23px 30px;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.6px;
 }
 
 .pagination-step a:hover,
