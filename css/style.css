@@ -522,10 +522,10 @@ html {
   content: '';
   width: 4px;
   height: 7px;
-  background-image: url('../img/svg/nav-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background: url('../img/svg/nav-arrow.svg') 50% 50% no-repeat;
+  background-size: 4px 7px;
   margin-left: 15px;
+  padding-left: 4px;
 }
 
 .breadcrumbs a {
