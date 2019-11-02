@@ -624,6 +624,10 @@ html {
   padding-right: 0;
 }
 
+.features-description .features-description-custom {
+  padding-right: 47px;
+}
+
 .products {
   margin-bottom: 181px;
 }
@@ -899,7 +903,7 @@ html {
   flex-direction: column;
   margin-right: 60px;
   position: relative;
-  width: 500px;
+  width: 501px;
 }
 
 .slider-content-wrapper::before {
